@@ -1,24 +1,24 @@
 # DMoove Hero-Video
 
-18-Sekunden-Loop ohne Ton für den Hero auf [dmoove.com](https://dmoove.com). Es zeigt die drei Schwerpunkte **Kubernetes**, **Souveränität** und **Compliance**. Gebaut ist es mit [Remotion](https://www.remotion.dev) (React → Video). Farben, Schriften und Logo kommen aus dem Theme `dmoove-2026`.
+28-Sekunden-Loop ohne Ton für den Hero auf [dmoove.com](https://dmoove.com). Es zeigt die drei Schwerpunkte **Kubernetes**, **Souveränität** und **Compliance**. Gebaut ist es mit [Remotion](https://www.remotion.dev) (React → Video). Farben, Schriften und Logo kommen aus dem Theme `dmoove-2026`.
 
 ## Fertige Dateien (`out/`)
 
 | Datei | Zweck |
 |---|---|
-| `dmoove-hero.webm` | VP9, 1920×1080, 30 fps (~1,3 MB). Wird bevorzugt geladen. |
-| `dmoove-hero.mp4` | H.264, 1920×1080, 30 fps, faststart (~1,7 MB). Fallback, z. B. für Safari. |
+| `dmoove-hero.webm` | VP9, 1920×1080, 30 fps (~1,5 MB). Wird bevorzugt geladen. |
+| `dmoove-hero.mp4` | H.264, 1920×1080, 30 fps, faststart (~2,1 MB). Fallback, z. B. für Safari. |
 | `dmoove-hero-poster.jpg` | Startbild des Loops: Poster und Fallback bei reduzierter Bewegung |
 
 ## Storyboard
 
 | Zeit | Szene |
 |---|---|
-| 0–3 s | Titel „AWS und Kubernetes, sauber betrieben.“ |
-| 3–8 s | **01 · Kubernetes**: Ebenen-Stack (Landing Zone → EKS-Plattform → Anwendungen), `git push` → FluxCD-Sync → Karpenter skaliert |
-| 8–12 s | **02 · Souveränität**: Umschalten von eu-central-1 auf die European Sovereign Cloud. Der Stack bleibt identisch, Launch-Partner-Badge |
-| 12–15 s | **03 · Compliance**: Compliance-Check mit Guardrails, Policies, Secrets, Audit-Trail und DSGVO/BDSG (GuardAudit) |
-| 15–18 s | Logo + „Souverän. Compliant. Kubernetes.“, danach zurück zum Titel (nahtloser Loop) |
+| 0–4 s | Titel „AWS und Kubernetes, sauber betrieben.“ |
+| 4–11 s | **01 · Kubernetes**: Ebenen-Stack (Landing Zone → EKS-Plattform → Anwendungen), `git push` → FluxCD-Sync → Karpenter skaliert |
+| 11–18 s | **02 · Souveränität**: Umschalten von eu-central-1 auf die European Sovereign Cloud. Der Stack bleibt identisch, Launch-Partner-Badge |
+| 18–24 s | **03 · Compliance**: Compliance-Check mit Guardrails, Policies, Secrets, Audit-Trail und DSGVO/BDSG (GuardAudit) |
+| 24–28 s | Logo + „Souverän. Compliant. Kubernetes.“, danach zurück zum Titel (nahtloser Loop) |
 
 ## Einbinden (HubSpot)
 

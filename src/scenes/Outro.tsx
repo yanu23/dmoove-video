@@ -19,7 +19,7 @@ export const Outro: React.FC<{ duration: number }> = ({ duration }) => {
           <div
             key={claim}
             style={{
-              ...rise(progress(frame, 6 + i * 5, 20 + i * 5), 24),
+              ...rise(progress(frame, 10 + i * 12, 26 + i * 12), 24),
               fontFamily: font.display,
               fontWeight: 800,
               fontSize: 76,
@@ -33,7 +33,7 @@ export const Outro: React.FC<{ duration: number }> = ({ duration }) => {
       </div>
       <div
         style={{
-          ...rise(progress(frame, 20, 34), 16),
+          ...rise(progress(frame, 46, 62), 16),
           fontFamily: font.body,
           fontSize: 26,
           color: color.onDark2,

@@ -10,12 +10,12 @@ import { VIDEO } from "./theme";
 // Szenen überlappen leicht für weiche Überblendungen; Texte zweier Szenen sind nie gleichzeitig voll sichtbar.
 // Das Intro steht am Anfang und baut sich am Ende wieder auf, damit der Loop nahtlos ist.
 const SCENES = {
-  intro: { from: 0, duration: 90 },
-  kubernetes: { from: 85, duration: 165 },
-  sovereignty: { from: 235, duration: 135 },
-  compliance: { from: 355, duration: 108 },
-  outro: { from: 448, duration: 80 },
-  introReturn: { from: 522, duration: VIDEO.durationInFrames - 522 },
+  intro: { from: 0, duration: 120 },
+  kubernetes: { from: 115, duration: 225 },
+  sovereignty: { from: 325, duration: 210 },
+  compliance: { from: 520, duration: 210 },
+  outro: { from: 715, duration: 115 },
+  introReturn: { from: 818, duration: VIDEO.durationInFrames - 818 },
 };
 
 export const HeroLoop: React.FC = () => (

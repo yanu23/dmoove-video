@@ -13,15 +13,15 @@ export const Kubernetes: React.FC<{ duration: number }> = ({ duration }) => {
 
   const build: [number, number, number] = [progress(frame, 8, 30), progress(frame, 20, 42), progress(frame, 32, 54)];
   // zwei Nodes beim Aufbau, Karpenter skaliert nach dem Deployment auf vier
-  const nodes = interpolate(frame, [40, 56, 100, 124], [0, 2, 2, 4], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const nodes = interpolate(frame, [40, 56, 150, 174], [0, 2, 2, 4], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
   // git push fliegt von oben in Ebene 3
-  const commitIn = progress(frame, 58, 72);
-  const commitDrop = progress(frame, 72, 88);
-  const commitOpacity = commitIn * (1 - progress(frame, 86, 94));
-  const pulse = interpolate(frame, [86, 96, 120], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const synced = progress(frame, 90, 104);
-  const scaled = progress(frame, 104, 118);
+  const commitIn = progress(frame, 90, 104);
+  const commitDrop = progress(frame, 104, 120);
+  const commitOpacity = commitIn * (1 - progress(frame, 118, 126));
+  const pulse = interpolate(frame, [118, 128, 155], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const synced = progress(frame, 122, 136);
+  const scaled = progress(frame, 155, 169);
 
   return (
     <AbsoluteFill style={{ opacity: sceneOpacity(frame, duration) }}>

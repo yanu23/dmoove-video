@@ -12,11 +12,11 @@ export const Sovereignty: React.FC<{ duration: number }> = ({ duration }) => {
   const frame = useCurrentFrame();
 
   const build: [number, number, number] = [progress(frame, 0, 18), progress(frame, 6, 24), progress(frame, 12, 30)];
-  const ring = progress(frame, 10, 60);
+  const ring = progress(frame, 10, 80);
   const rotation = interpolate(frame, [0, duration], [-12, 12]);
   const toggleIn = progress(frame, 18, 34);
-  const switched = progress(frame, 50, 66);
-  const regionSwap = frame >= 58;
+  const switched = progress(frame, 90, 106);
+  const regionSwap = frame >= 98;
 
   return (
     <AbsoluteFill style={{ opacity: sceneOpacity(frame, duration) }}>

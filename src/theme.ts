@@ -22,4 +22,4 @@ export const font = {
 
 export const radius = { sm: 8, md: 12, lg: 16, xl: 24, pill: 999 };
 
-export const VIDEO = { width: 1920, height: 1080, fps: 30, durationInFrames: 540 };
+export const VIDEO = { width: 1920, height: 1080, fps: 30, durationInFrames: 840 };

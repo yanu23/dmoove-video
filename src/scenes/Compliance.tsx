@@ -12,8 +12,8 @@ const CHECKS = [
   { title: "DSGVO · BDSG", sub: "Geprüft mit DMoove GuardAudit" },
 ];
 
-const FIRST_CHECK = 30;
-const CHECK_STEP = 11;
+const FIRST_CHECK = 40;
+const CHECK_STEP = 18;
 
 export const Compliance: React.FC<{ duration: number }> = ({ duration }) => {
   const frame = useCurrentFrame();
